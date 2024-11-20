@@ -1,3 +1,2 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Portafolio cargado con éxito.");
-});
+
+console.log("¡Bienvenido a mi portafolio interactivo!");
