@@ -57,22 +57,33 @@ body {
 /* Banner */
 .banner {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('background-laptop.jpg');
-  background-size: cover;
+  background-color: #1E1E2F;
   color: white;
   padding: 0 20px;
 }
 
 .banner-content {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner-text {
+  max-width: 50%;
 }
 
 .banner .highlight {
   color: #66779B;
+}
+
+.banner-image img {
+  width: 100%;
+  max-width: 500px;
 }
 
 /* About Section */
