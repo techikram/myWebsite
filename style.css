@@ -14,10 +14,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #0d1a2d; 
+  background-color: #0d1a2d;
   z-index: 10;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 .container {
   max-width: 1200px;
@@ -28,11 +29,25 @@ body {
   padding: 15px 20px;
 }
 
+
 .site-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #b39ddb; 
+  color: #b39ddb;
+  animation: moveTitle 1s ease-out;
 }
+
+@keyframes moveTitle {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
 .navbar {
   display: flex;
@@ -51,6 +66,7 @@ body {
   color: white;
 }
 
+
 .contact-btn {
   background: #374a76;
   color: white;
@@ -67,23 +83,24 @@ body {
 
 .main-header {
   text-align: center;
-  padding: 120px 20px 80px;
+  padding: 80px 20px 40px;
   background: linear-gradient(135deg, #374a76, #92a8de);
 }
+
 
 .main-header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(135deg, #374a76, #92a8de);
+  padding: 20px 0;
 }
 
 .main-header .highlight {
   color: #b39ddb;
 }
 
-.main-header p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
 
 .btn {
   display: inline-block;
@@ -110,6 +127,7 @@ section {
   margin: 0 auto;
 }
 
+
 .about,
 .projects,
 .contact {
@@ -124,7 +142,6 @@ h2 {
   margin-bottom: 20px;
   color: #b39ddb;
 }
-
 
 .footer {
   text-align: center;
