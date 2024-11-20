@@ -97,10 +97,31 @@ body {
 }
 
 .banner-image img {
-  width: 500px;
+  width: 600px; /* Laptop más grande */
   max-width: 100%;
   margin-right: auto; /* Alineación a la izquierda */
+  position: relative;
+  z-index: 1;
 }
+
+.banner-image {
+  position: relative; /* Para la sombra */
+}
+
+.banner-image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(102, 119, 155, 0.5), transparent);
+  border-radius: 20px;
+  z-index: 0; /* Detrás del laptop */
+  filter: blur(50px); /* Efecto de luz difusa */
+}
+
 
 /* Botón See Projects */
 .banner .btn {
