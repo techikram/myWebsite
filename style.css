@@ -29,13 +29,24 @@ body {
   z-index: -1;
 }
 
+.rounded-laptop {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
 /* Profile Image */
-#about .col-lg-6 img {
+.profile-img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Projects Section */
+.project-img {
+  max-height: 500px;
+  border-radius: 10px;
+}
+
 .carousel-inner img {
   max-height: 500px;
   border-radius: 10px;
