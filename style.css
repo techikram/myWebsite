@@ -199,62 +199,87 @@ body {
 }
 
 
+
 .particles {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; 
+  pointer-events: none;
   z-index: 0;
   overflow: hidden;
 }
 
+
 .particle {
   position: absolute;
-  background-color: rgba(179, 157, 219, 0.7); 
-  width: 25px;
-  height: 25px;
+  background-color: rgba(179, 157, 219, 0.8); 
   border-radius: 50%;
-  animation: bounce 5s ease-in-out infinite, moveDown 15s ease-in-out infinite;
-  box-shadow: 0 0 10px rgba(179, 157, 219, 0.7); 
+  animation: bounce 4s ease-in-out infinite, moveSide 10s linear infinite, resize 5s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(179, 157, 219, 0.7);
 }
-
 
 .particle:nth-child(1) {
   left: 20%;
-  animation-delay: 0.5s;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0.2s;
 }
 
 .particle:nth-child(2) {
   left: 50%;
-  animation-delay: 1.5s;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1s;
 }
 
 .particle:nth-child(3) {
   left: 70%;
-  animation-delay: 2s;
+  width: 25px;
+  height: 25px;
+  animation-delay: 1.5s;
 }
 
 .particle:nth-child(4) {
   left: 80%;
-  animation-delay: 3s;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
 }
+
 
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-30px) scale(1.2);
+    transform: translateY(-40px) scale(1.5); 
   }
 }
 
-@keyframes moveDown {
+
+@keyframes moveSide {
   0% {
-    top: 0%;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50vw); 
   }
   100% {
-    top: 100%;
+    transform: translateX(0);
   }
 }
+
+
+@keyframes resize {
+  0%, 100% {
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    width: 40px;
+    height: 40px; 
+  }
+}
+
