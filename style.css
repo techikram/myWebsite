@@ -62,27 +62,16 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('header.jpg') center/cover no-repeat; /* Imagen de fondo */
+  background: linear-gradient(to bottom, #2c1a56, #1e1e2f); /* Degradado de lila oscuro a negro */
   color: white;
   text-align: center;
   position: relative;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7); /* Sombra interna para dar más profundidad */
 }
 
-/* Overlay oscuro para mejorar visibilidad del texto sobre la imagen */
-.banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Capa oscura sobre la imagen */
-  z-index: -1; /* Colocamos la capa debajo del contenido */
-}
 
-/* Contenido del banner */
 .banner-content {
-  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente para mejorar la legibilidad */
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente dentro del banner */
   padding: 20px;
   border-radius: 10px;
   z-index: 1;
