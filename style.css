@@ -14,34 +14,10 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-   background: linear-gradient(to bottom, #1e1e2f, #2c1a56);/* Color lila oscuro */
+  background: linear-gradient(to bottom, #1e1e2f, #2c1a56); /* Lila oscuro */
   padding: 10px 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* Mantener sombra suave */
-}
-
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.robot-icon {
-  width: 40px;
-  height: 40px;
-}
-
-.site-title {
-  font-size: 1.8rem;
-  font-weight: 600;
 }
 
 /* Navbar */
@@ -55,6 +31,7 @@ body {
   text-decoration: none;
   padding: 5px 10px;
 }
+
 /* Interactive Banner */
 .banner {
   display: flex;
@@ -65,26 +42,45 @@ body {
   color: white;
   text-align: center;
   position: relative;
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7); /* Sombra interna para dar profundidad */
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7); /* Sombra interna para profundidad */
+  animation: gradientMove 10s ease-in-out infinite; /* Movimiento dinámico del fondo */
+}
+
+@keyframes gradientMove {
+  0% { background: linear-gradient(to bottom, #1e1e2f, #2c1a56); }
+  50% { background: linear-gradient(to bottom, #2c1a56, #1e1e2f); }
+  100% { background: linear-gradient(to bottom, #1e1e2f, #2c1a56); }
 }
 
 .banner-content {
-  display: flex; /* Usamos flexbox para alinear el contenido y la imagen */
-  flex-direction: row; /* Dirección horizontal */
+  display: flex; /* Alineación de texto y imagen */
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 40px; /* Espacio entre el texto y la imagen */
+  gap: 40px;
   z-index: 1;
   padding: 20px;
+  animation: slideIn 1.5s ease-out; /* Animación del contenido */
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
 }
 
 .banner h1 {
   font-size: 3rem;
   font-weight: 600;
+  animation: fadeIn 2s ease-out; /* Animación del título */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .banner .highlight {
-  color: #b39ddb; /* Color lila para destacar "Artificial Intelligence" */
+  color: #b39ddb; /* Color lila destacado */
 }
 
 .banner .btn {
@@ -95,12 +91,26 @@ body {
   text-decoration: none;
   font-weight: bold;
   margin-top: 20px;
+  animation: pulse 2s infinite ease-in-out; /* Pulsación del botón */
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
 .banner .robot-image {
-  width: 300px; /* Ajusta el tamaño de la imagen según sea necesario */
+  width: 300px; /* Ajusta el tamaño de la imagen */
   height: auto;
-  object-fit: contain; /* Para asegurarnos que la imagen se ajusta bien sin deformarse */
+  object-fit: contain;
+  animation: float 3s ease-in-out infinite; /* Animación flotante para la imagen */
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 .about {
