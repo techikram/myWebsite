@@ -1,4 +1,4 @@
-/* General Body Styling */
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -7,8 +7,9 @@ body {
   color: white;
   line-height: 1.6;
   scroll-behavior: smooth;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
+
 
 .sticky-header {
   position: fixed;
@@ -45,6 +46,7 @@ body {
   font-weight: 600;
 }
 
+
 .navbar {
   display: flex;
   gap: 15px;
@@ -57,12 +59,13 @@ body {
 }
 
 
+
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #1e1e2f, #1e1e2f); 
+  background: linear-gradient(to bottom, #1e1e2f, #1e1e2f);
   color: white;
   text-align: center;
   position: relative;
@@ -110,6 +113,8 @@ body {
   object-fit: contain;
 }
 
+
+
 .about {
   padding: 50px 20px;
   background-color: #1e1e2f;
@@ -122,7 +127,7 @@ body {
   font-size: 2.5rem;
 }
 
-/* Projects Section */
+
 .projects {
   padding: 50px 20px;
   background-color: #1e1e2f;
@@ -143,6 +148,7 @@ body {
   padding: 10px;
   text-align: center;
 }
+
 
 
 .contact {
@@ -192,6 +198,7 @@ body {
   text-decoration: underline;
 }
 
+
 .particles {
   position: absolute;
   top: 0;
@@ -211,6 +218,8 @@ body {
   border-radius: 50%;
   animation: bounce 5s ease-in-out infinite, moveDown 15s ease-in-out infinite;
   box-shadow: 0 0 10px rgba(179, 157, 219, 0.7); 
+}
+
 
 .particle:nth-child(1) {
   left: 20%;
@@ -249,4 +258,3 @@ body {
     top: 100%;
   }
 }
-
