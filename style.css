@@ -17,7 +17,7 @@ body {
   background: linear-gradient(to bottom, #1e1e2f, #2c1a56); /* Lila oscuro */
   padding: 10px 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* Mantener sombra suave */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* Sombra suave */
 }
 
 /* Navbar */
@@ -43,7 +43,7 @@ body {
   text-align: center;
   position: relative;
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7); /* Sombra interna para profundidad */
-  animation: gradientMove 10s ease-in-out infinite; /* Movimiento dinámico del fondo */
+  animation: gradientMove 15s ease-in-out infinite; /* Movimiento suave del fondo */
 }
 
 @keyframes gradientMove {
@@ -53,25 +53,19 @@ body {
 }
 
 .banner-content {
-  display: flex; /* Alineación de texto y imagen */
+  display: flex; /* Alineación de texto y la imagen */
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 40px;
   z-index: 1;
   padding: 20px;
-  animation: slideIn 1.5s ease-out; /* Animación del contenido */
-}
-
-@keyframes slideIn {
-  0% { transform: translateX(-100%); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
 }
 
 .banner h1 {
   font-size: 3rem;
   font-weight: 600;
-  animation: fadeIn 2s ease-out; /* Animación del título */
+  animation: fadeIn 2s ease-out; /* Efecto fade-in para el título */
 }
 
 @keyframes fadeIn {
@@ -79,12 +73,24 @@ body {
   100% { opacity: 1; }
 }
 
+.banner h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 10px;
+  animation: slideIn 1.5s ease-out; /* Deslizar el texto */
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
 .banner .highlight {
-  color: #b39ddb; /* Color lila destacado */
+  color: #b39ddb; /* Lila destacado */
 }
 
 .banner .btn {
-  background: #b39ddb; /* Color lila para el botón */
+  background: #b39ddb; /* Lila para el botón */
   padding: 10px 20px;
   border-radius: 5px;
   color: white;
@@ -104,7 +110,7 @@ body {
   width: 300px; /* Ajusta el tamaño de la imagen */
   height: auto;
   object-fit: contain;
-  animation: float 3s ease-in-out infinite; /* Animación flotante para la imagen */
+  animation: float 3s ease-in-out infinite; /* Efecto flotante */
 }
 
 @keyframes float {
