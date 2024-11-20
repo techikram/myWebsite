@@ -16,39 +16,79 @@ body {
   width: 100%;
   background-color: #0d1a2d;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.animated-title {
+.site-title {
   font-size: 1.5rem;
   font-weight: 600;
   color: #b39ddb;
-  animation: slideIn 2s ease-in-out;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+
+.navbar {
+  display: flex;
+  gap: 15px;
 }
 
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.contact-btn {
+  background-color: #b39ddb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
 .main-header {
-  text-align: center;
-  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
   background: linear-gradient(135deg, #374a76, #92a8de);
   color: white;
+  text-align: center;
   width: 100%;
+  height: 100vh; 
+}
+
+.main-header-content {
+  max-width: 800px;
 }
 
 .main-header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.main-header .btn {
+  background-color: #b39ddb;
   color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.highlight {
+  color: #b39ddb;
 }
 
 
