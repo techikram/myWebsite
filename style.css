@@ -8,17 +8,70 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
 }
-
-/* Sticky Header */
+/* Header - Cambiar fondo por imagen */
 .sticky-header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px 0;
+  background: url('header.jpg') center/cover no-repeat; /* Imagen de fondo */
+  padding: 20px 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  color: white; /* Color de texto blanco */
 }
+
+/* Ajuste en el banner */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('header.jpg') center/cover no-repeat; /* Imagen de fondo */
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay para mejorar la visibilidad del texto */
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Capa oscura encima de la imagen */
+  z-index: -1; /* Colocamos la capa detrás del contenido */
+}
+
+.banner-content {
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro para mejorar la legibilidad del texto */
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.banner .highlight {
+  color: #b39ddb; /* Color destacado para la palabra AI */
+}
+
+.banner .btn {
+  background: #b39ddb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  z-index: 1;
+}
+
 
 .header-container {
   max-width: 1200px;
