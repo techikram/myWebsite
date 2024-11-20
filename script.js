@@ -1,9 +1,10 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-  const title = document.querySelector(".animated-title");
-  title.style.transform = "translateX(-100%)";
-  title.style.transition = "transform 2s";
-  setTimeout(() => {
-    title.style.transform = "translateX(0)";
-  }, 500);
+  const robot = document.querySelector(".robot-icon");
+  if (robot) {
+    robot.style.transform = "scale(0.5)";
+    setTimeout(() => {
+      robot.style.transition = "transform 0.5s";
+      robot.style.transform = "scale(1)";
+    }, 500);
+  }
 });
