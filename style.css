@@ -61,7 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #2c1a56, #1e1e2f); /* Degradado lila oscuro a negro */
+  background: linear-gradient(to bottom, #1e1e2f, #2c1a56); /* Degradado lila oscuro a negro */
   color: white;
   text-align: center;
   position: relative;
