@@ -134,46 +134,87 @@ body {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-}
-
-/* About Section */
+}/* About Section */
 .about {
-  background: #66779B;
-  padding: 80px 20px;
-  color: #ffffff;
+  background: #66779B; /* Color lila del banner */
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .about-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.about h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 1rem;
-  line-height: 1.8;
-  margin: 0;
-}
-
-.about img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover; /* Hace que la imagen sea cuadrada sin deformarla */
-  border-radius: 10px; /* Bordes ligeramente redondeados */
-  margin-left: auto; /* Alineación a la derecha */
+.about-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .about-text {
-  max-width: 60%;
+  max-width: 55%;
+  text-align: left;
+  color: white;
 }
+
+.about-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: left;
+  color: white;
+}
+
+.about h2 .highlight {
+  color: #e0c3fc; /* Color lila */
+}
+
+.about .highlight {
+  color: #e0c3fc; /* Color lila */
+  font-weight: bold;
+}
+
+/* Imagen de perfil cuadrada */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10%; /* Bordes suaves */
+  margin: 0 auto;
+  display: block;
+}
+
+.about-image {
+  max-width: 35%;
+  text-align: center;
+}
+
+/* Botón LinkedIn */
+.linkedin-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #66779B; /* Lila */
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.linkedin-btn:hover {
+  background-color: #e0c3fc;
+  border-color: #e0c3fc;
+}
+
 
 /* Projects Section */
 .projects {
