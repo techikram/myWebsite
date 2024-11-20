@@ -115,7 +115,7 @@ body {
 /* About Section */
 .about {
   padding: 50px 20px;
-  background-color: #24033a;
+  background-color: #1e1e2f;
   color: white;
   text-align: center;
 }
@@ -127,7 +127,7 @@ body {
 /* Projects Section */
 .projects {
   padding: 50px 20px;
-  background-color: #3a2747;
+  background-color: #1e1e2f;
   text-align: center;
 }
 
