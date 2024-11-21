@@ -71,13 +71,48 @@ a:hover {
 }
 
 /* Banner Section */
+/* Banner Section */
 .banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 50px 20px;
-  background: linear-gradient(to right, #1E1E2F, #8A2BE2);
+  background: linear-gradient(90deg, #1E1E2F, #8A2BE2);
+  position: relative;
+  overflow: hidden;
 }
+
+/* Fondo animado */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(270deg, #1E1E2F, #8A2BE2);
+  z-index: -1;
+  animation: gradient-animation 8s infinite linear;
+}
+
+@keyframes gradient-animation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.dynamic-text {
+  display: inline-block;
+  animation: typewriter 4s steps(12) infinite;
+  overflow: hidden;
+  border-right: 2px solid white;
+}
+
+@keyframes typewriter {
+  0% { width: 0; }
+  50% { width: 100%; }
+  100% { width: 0; }
+}
+
 
 .banner-content {
   max-width: 50%;
