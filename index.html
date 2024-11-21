@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechIkram | AI Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
   <!-- Header -->
@@ -23,23 +24,22 @@
 
   <!-- Banner Section -->
   <section id="home" class="banner">
-  <div class="banner-content">
-    <h1 class="highlight big-title">
-      <span class="dynamic-text">Hi! I'm Ikram :)</span>
-    </h1>
-    <p>Welcome to my portfolio. Here you will find some of my most exciting and innovative projects, driven by a passion for 
-      <span class="highlight">Artificial Intelligence</span>, <span class="highlight">technology</span>, and <span class="highlight">creative solutions</span>.
-    </p>
-    <a href="#projects" class="btn btn-primary">See Projects</a>
-  </div>
-  <div class="banner-image">
-    <img src="latopbanner.svg" alt="Laptop Banner" class="laptop-img">
-  </div>
-</section>
-
+    <div class="banner-content">
+      <h1 class="highlight big-title">
+        <span class="dynamic-text">Hi! I'm Ikram :)</span>
+      </h1>
+      <p>Welcome to my portfolio. Here you will find some of my most exciting and innovative projects, driven by a passion for 
+        <span class="highlight">Artificial Intelligence</span>, <span class="highlight">technology</span>, and <span class="highlight">creative solutions</span>.
+      </p>
+      <a href="#projects" class="btn btn-primary">See Projects</a>
+    </div>
+    <div class="banner-image">
+      <img src="laptopbanner.svg" alt="Laptop Banner" class="laptop-img">
+    </div>
+  </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
+  <section id="about" class="about" data-aos="fade-up">
     <div class="text-container">
       <h2 class="about-title">About <span class="highlight">Me</span></h2>
       <p>Hi, I'm <span class="highlight-dark">Ikram</span>, a 23-year-old <span class="highlight-dark">Computer Science Engineer</span> passionate about technology and problem-solving. With a strong focus on deep learning, machine learning, and AI.</p>
@@ -49,31 +49,36 @@
   </section>
 
   <!-- Projects Section -->
- <section id="projects" class="projects">
-  <h2 class="projects-title">Some of my <span class="highlight">Projects</span>!</h2>
-  <div class="project-carousel">
-    <div class="project-slide">
-      <img src="https://source.unsplash.com/600x400/?technology" alt="Project 1">
-      <h3>GIS for Smart Cities</h3>
-      <p>Developed AI-powered GIS systems for smart city planning and management.</p>
+  <section id="projects" class="projects" data-aos="fade-right">
+    <h2 class="projects-title">Some of my <span class="highlight">Projects</span>!</h2>
+    <div class="project-carousel">
+      <div class="project-slide">
+        <img src="https://source.unsplash.com/600x400/?technology" alt="Project 1">
+        <h3>GIS for Smart Cities</h3>
+        <p>Developed AI-powered GIS systems for smart city planning and management.</p>
+      </div>
+      <div class="project-slide">
+        <img src="https://source.unsplash.com/600x400/?deep-learning" alt="Project 2">
+        <h3>Melanoma Classification</h3>
+        <p>Built convolutional neural network models to detect melanoma from medical images.</p>
+      </div>
+      <div class="project-slide">
+        <img src="https://source.unsplash.com/600x400/?ai" alt="Project 3">
+        <h3>Custom AI Tools</h3>
+        <p>Developed machine learning pipelines for various business applications.</p>
+      </div>
     </div>
-    <div class="project-slide">
-      <img src="https://source.unsplash.com/600x400/?deep-learning" alt="Project 2">
-      <h3>Melanoma Classification</h3>
-      <p>Built convolutional neural network models to detect melanoma from medical images.</p>
-    </div>
-    <div class="project-slide">
-      <img src="https://source.unsplash.com/600x400/?ai" alt="Project 3">
-      <h3>Custom AI Tools</h3>
-      <p>Developed machine learning pipelines for various business applications.</p>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <p>© 2024 TechIkram | <a href="https://github.com/techikram">GitHub</a> | <a href="https://linkedin.com/in/techikram">LinkedIn</a></p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
