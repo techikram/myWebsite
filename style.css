@@ -38,6 +38,7 @@ body {
 .navbar {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .navbar a {
@@ -86,59 +87,16 @@ body {
 }
 
 .typing-effect {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
-  overflow: hidden;
   border-right: 3px solid white;
   white-space: nowrap;
-  animation: typing 4s steps(25) forwards, blink 0.8s infinite;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  margin-top: 20px;
-  color: #f0f0f0;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 14ch; /* Ajustado al tamaño de "Hi, I'm Ikram :)" */
-  }
+  overflow: hidden;
 }
 
 @keyframes blink {
   50% {
     border-color: transparent;
   }
-}
-
-/* About Section */
-.about {
-  padding: 40px 20px;
-  background-color: #66779B;
-}
-
-.about-title {
-  font-size: 2.5rem;
-  color: white;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  background-color: #10101A;
-  text-align: center;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
 }
