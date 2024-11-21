@@ -1,28 +1,40 @@
-/* Estilos Generales */
+/* General Styles */
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
   background-color: #1E1E2F;
   color: white;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #8A2BE2; 
+  font-weight: bold;
+}
+
+.highlight {
+  color: #8A2BE2;
+}
+
+.highlight-dark {
+  color: #1E1E2F; /* Palabras destacadas en fondo claro */
+}
+
+.big-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
 }
 
 /* Header */
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
-  background-color: #10101A;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
-
-.logo-container {
-  display: flex;
   align-items: center;
+  padding: 20px;
+  background-color: #1E1E2F;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  position: relative; /* Necesario para posicionar la capa */
 }
 
 .logo {
@@ -31,72 +43,109 @@ body {
 }
 
 .site-title {
-  font-size: 1.5rem;
-  color: white;
+  font-size: 2rem;
 }
 
-.navbar {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.contact-btn {
-  background-color: #8A2BE2;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-.contact-btn:hover {
-  background-color: #6F22A7;
-}
-
-/* Banner con GIF */
+/* Banner Section */
 .banner {
-  position: relative;
-  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  text-align: center;
-  color: white;
-  padding: 0 20px;
+  justify-content: center; /* Centrar contenido vertical y horizontal */
+  padding: 40px;
+  background-color: transparent; /* Transparente para que el GIF se vea */
+  position: relative;
+  overflow: hidden; /* Para que el contenido no se desborde */
 }
 
-.banner::before {
-  content: "";
+.banner-image {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
-  background: url('headerBanner.gif') no-repeat center center/cover;
-  z-index: -1;
+  object-fit: cover; /* Esto asegura que el gif cubra toda la zona */
+  z-index: -1; /* Colocamos el gif detrás del contenido */
 }
 
-/* Texto Central del Banner */
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(30, 30, 47, 0.6); /* Color oscuro semitransparente */
+  z-index: 0; /* Ponemos la capa encima del gif */
+}
+
 .banner-content {
-  z-index: 1;
+  z-index: 1; /* Hacemos que el texto esté sobre la capa */
+  text-align: center;
+  color: white;
 }
 
+/* Typing effect text */
 .typing-effect {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  border-right: 3px solid white;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #8A2BE2;
+  border-right: 3px solid #8A2BE2;
+  padding-right: 5px;
   white-space: nowrap;
   overflow: hidden;
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+.typing-effect span {
+  display: inline-block;
+}
+
+.typing-effect {
+  margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #66779B;
+}
+
+.btn-secondary {
+  background-color: #1E1E2F;
+}
+
+/* Other Sections */
+.about, .projects {
+  padding: 40px;
+  background-color: #66779B; 
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background-color: #8A2BE2;
+  color: white;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
