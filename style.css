@@ -13,17 +13,13 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-.highlight {
-  color: #8A2BE2;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.highlight-dark {
-  color: #1E1E2F; /* Palabras destacadas en fondo claro */
-}
-
-.big-title {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
+a:hover {
+  text-decoration: underline;
 }
 
 /* Header */
@@ -31,114 +27,58 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 15px 20px;
   background-color: #1E1E2F;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  width: 50px;
+  width: 40px;
   margin-right: 10px;
 }
 
-.site-title {
-  font-size: 2rem;
+.navbar a {
+  margin: 0 15px;
+  font-weight: bold;
 }
 
 /* Banner Section */
 .banner {
   display: flex;
   align-items: center;
-  padding: 40px;
-  background-color: #1E1E2F;
-}
-
-.banner-image {
-  max-width: 45%;
-}
-
-.laptop-img {
-  width: 100%;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #1E1E2F, #8A2BE2);
 }
 
 .banner-content {
   max-width: 50%;
-  margin-left: auto;
+}
+
+.laptop-img {
+  max-width: 100%;
 }
 
 /* About Section */
 .about {
-  padding: 40px;
-  background-color: #66779B; 
-}
-
-.about-title {
-  font-size: 2.5rem;
-}
-
-.btn {
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-}
-
-.btn-primary {
+  padding: 50px 20px;
   background-color: #66779B;
-}
-
-.btn-secondary {
-  background-color: #1E1E2F;
 }
 
 /* Projects Section */
 .projects {
-  padding: 40px;
-  background-color: #1E1E2F;
-}
-
-.projects-title {
+  padding: 50px 20px;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.project-carousel {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-}
-
-.project-item {
-  flex: 0 0 auto;
-  max-width: 300px;
-  text-align: center;
-}
-
-.project-img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.project-item h3 {
-  margin-top: 10px;
 }
 
 /* Footer */
 .footer {
   padding: 20px;
   background-color: #8A2BE2;
-  color: white;
   text-align: center;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
 }
