@@ -21,13 +21,14 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 /* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #161625; /* Color más oscuro para el fondo */
+  background-color: #161625;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -37,7 +38,7 @@ a:hover {
 }
 
 .logo {
-  width: 40px; /* Tamaño ajustado del logo */
+  width: 40px;
   margin-right: 10px;
 }
 
@@ -45,7 +46,7 @@ a:hover {
   font-size: 1.5rem;
   color: white;
   font-weight: bold;
-  margin: 0; /* Eliminar márgenes extra */
+  margin: 0;
 }
 
 .navbar {
@@ -56,22 +57,9 @@ a:hover {
   margin: 0 15px;
   font-weight: bold;
   color: white;
-  text-decoration: none;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-.contact-btn {
-  padding: 5px 10px;
-  background-color: #8A2BE2;
-  color: white;
-  border-radius: 5px;
-}
-
-/* Banner Section */
-/* Banner Section */
+/* Banner */
 .banner {
   display: flex;
   align-items: center;
@@ -82,7 +70,6 @@ a:hover {
   overflow: hidden;
 }
 
-/* Fondo animado */
 .banner::before {
   content: "";
   position: absolute;
@@ -113,25 +100,32 @@ a:hover {
   100% { width: 0; }
 }
 
-
-.banner-content {
-  max-width: 50%;
+/* Proyectos */
+.project-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 
-.laptop-img {
-  max-width: 100%;
-}
-
-/* About Section */
-.about {
-  padding: 50px 20px;
-  background-color: #66779B;
-}
-
-/* Projects Section */
-.projects {
-  padding: 50px 20px;
+.project-slide {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: center;
   text-align: center;
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 /* Footer */
