@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const typingText = `Hi, I'm Ikram :) Welcome to my portfolio, where you'll find my recent works and learn a bit about me.`;
+  const typingText = `Hi, I'm Ikram :) Welcome to my portfolio!`;
   const typingElement = document.querySelector(".typing-effect");
   let index = 0;
 
