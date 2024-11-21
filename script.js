@@ -4,15 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
   let index = 0;
 
   function type() {
+    // Si no se ha terminado el texto, continúa escribiendo
     if (index < typingText.length) {
       typingElement.textContent += typingText.charAt(index);
       index++;
-      setTimeout(type, 100); 
+      setTimeout(type, 100); // Ajustar velocidad de tipeo (ms por letra)
     } else {
-      typingElement.style.borderRight = "none"; 
+      // Eliminar el cursor después de que termine de escribir todo
+      typingElement.style.borderRight = "none";
     }
   }
 
+  // Iniciar el efecto de tipeo
   type();
 });
-
