@@ -284,17 +284,33 @@ p {
   background-color: #222;
   padding: 20px;
   border-radius: 8px;
-  width: 300px;
+  width: 400px;
   box-shadow: 0px 5px 15px rgba(138, 43, 226, 0.6), 
               0px 0px 20px rgba(0, 191, 255, 0.5);
 }
 
 .project-card h3 {
   font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .project-card p {
   font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: #1e90ff; /* Azul claro */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1380d8; /* Azul más oscuro */
 }
 
 /* Contact Section */
