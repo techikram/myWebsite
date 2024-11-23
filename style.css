@@ -17,8 +17,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para el header */
+  background-color: rgba(0, 0, 0, 0.7); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .logo-container {
@@ -30,6 +30,7 @@ body {
   width: 40px;
   height: 40px;
   margin-right: 10px;
+  filter: drop-shadow(0px 4px 6px rgba(255, 255, 255, 0.7));
 }
 
 .site-title {
@@ -53,7 +54,7 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #d0b8ff; /* Lila claro al hacer hover */
+  color: #d0b8ff; 
 }
 
 /* Menú móvil */
@@ -100,6 +101,9 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
 }
 
 .banner-content {
@@ -108,10 +112,12 @@ body {
 }
 
 .typing-effect {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
-  color: white;
+  color: #9b68f6; /* Color morado oscuro */
   animation: typing 4s steps(30) infinite;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 @keyframes typing {
@@ -126,11 +132,11 @@ body {
 p {
   font-size: 1.5rem;
   margin-top: 10px;
-  color: #e5f1f4; 
+  color: #e5f1f4; /* Azul más claro */
 }
 
 .btn {
-  background-color: #a375f7; 
+  background-color: #a375f7;
   color: white;
   padding: 15px 30px;
   text-decoration: none;
@@ -148,11 +154,11 @@ p {
 /* Ajustes responsivos */
 @media (max-width: 768px) {
   .banner .typing-effect {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 
   .banner p {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 
   .banner .btn {
