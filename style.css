@@ -1,11 +1,24 @@
+/* Reseteo de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+}
+
 /* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para el header */
 }
 
 .logo-container {
@@ -40,7 +53,7 @@
 }
 
 .nav-links li a:hover {
-  color: #d0b8ff; 
+  color: #d0b8ff; /* Lila claro al hacer hover */
 }
 
 /* Menú móvil */
@@ -95,7 +108,7 @@
 }
 
 .typing-effect {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   color: white;
   animation: typing 4s steps(30) infinite;
@@ -123,16 +136,16 @@ p {
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.2rem;
-  box-shadow: 0 8px 15px rgba(163, 117, 247, 0.5); 
+  box-shadow: 0 8px 15px rgba(163, 117, 247, 0.5);
   transition: all 0.3s ease;
 }
 
 .btn:hover {
   background-color: #7b4ec0; 
-  box-shadow: 0 12px 25px rgba(123, 78, 192, 0.8);
+  box-shadow: 0 12px 25px rgba(123, 78, 192, 0.8); 
 }
 
-
+/* Ajustes responsivos */
 @media (max-width: 768px) {
   .banner .typing-effect {
     font-size: 2.5rem; 
@@ -141,7 +154,7 @@ p {
   .banner p {
     font-size: 1.2rem; 
   }
-  
+
   .banner .btn {
     font-size: 1rem;
     padding: 12px 25px;
