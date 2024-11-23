@@ -25,3 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.classList.toggle("open");
   });
 });
+
+<script>
+  document.getElementById('show-more').addEventListener('click', function () {
+    const hiddenItems = document.querySelectorAll('.technologies-list .hidden');
+    hiddenItems.forEach((item) => {
+      item.style.display = item.style.display === 'none' || item.style.display === '' ? 'inline-block' : 'none';
+    });
+
+  
+    this.textContent = this.textContent === 'Show More' ? 'Show Less' : 'Show More';
+  });
+</script>
+
