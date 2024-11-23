@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #000;
+  background-color: #111;
   color: #111;
 }
 
@@ -249,12 +249,12 @@ p {
 
 /* Fondo general negro */
 .about {
-  background-color: #111; /* Igual que la sección de proyectos */
+  background-color: #111; 
   color: #fff;
   padding: 40px 20px;
   border-radius: 8px;
-  max-width: 1200px; /* Establece un ancho máximo para la sección */
-  margin: 0 auto; /* Centra el contenido */
+  max-width:100%; 
+  margin: 5; 
 }
 
 .text-container {
