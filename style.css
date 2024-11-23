@@ -246,70 +246,81 @@ p {
               0px 0px 12px rgba(255, 255, 255, 0.5); /* Blanco más brillante */
 }
 
-
-/* Fondo general negro */
+/* Centrado general */
 .about {
-  background-color: #111; 
-  color: #fff;
-  padding: 40px 20px;
-  max-width:100%; 
-  margin: 5; 
+  display: flex;
+  justify-content: center; /* Centra el contenido en el eje horizontal */
+  align-items: center;     /* Centra el contenido en el eje vertical */
+  flex-direction: column;  /* Coloca los elementos en una columna */
+  padding: 50px 20px;
+  text-align: center;      /* Alinea el texto al centro */
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Hace que los elementos se acomoden en varias filas en pantallas pequeñas */
+  gap: 30px; /* Espacio entre la imagen y el texto */
+  max-width: 1200px; /* Límite de ancho para evitar que el contenido se estire demasiado */
+  margin: 0 auto; /* Centra el contenedor en la página */
 }
 
 .text-container {
-  max-width: 600px;
-  line-height: 1.6;
-  color: #ccc;
-  margin-right: 20px;
+  flex: 1 1 45%; /* Toma el 45% del ancho y se adapta en pantallas pequeñas */
+  max-width: 500px; /* Limita el ancho máximo del texto */
 }
 
-.about-title {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #fff;
-}
-
-/* Titulo "Me" con azul, blanco y sombra morada */
-.about-title .highlight {
-  color: #1e90ff;
-  text-shadow: 0px 4px 10px rgba(138, 43, 226, 0.6), 0px 3px 10px rgba(255, 255, 255, 0.4);
+.image-container {
+  flex: 1 1 45%; /* Toma el 45% del ancho y se adapta en pantallas pequeñas */
 }
 
 .profile-img {
-  max-height: 300px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Añade una sombra para darle profundidad */
+}
+
+/* Estilo para el título y resaltado */
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #ff6347; /* Un color cálido para resaltar */
+}
+
+/* Estilo para los botones */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
 }
 
 /* Tecnologías */
 .technologies-container {
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: center;
-}
-
-.technologies-title {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #fff;
 }
 
 .technologies-list {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
-  max-width: 600px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
 }
 
 .technologies-list li {
-  padding: 8px 12px;
-  background-color: #222;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin: 10px 15px;
+  font-size: 1.2rem;
 }
 
 .modal {
@@ -348,8 +359,6 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
-
-
 
 /* Projects Section */
 .projects {
