@@ -88,35 +88,41 @@ p {
 .nav-links li:last-child {
   margin-left: auto;
 }
-
-/* Banner Section */
+/* Banner container styles */
 .banner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: top;
+  justify-content: center; /* Centra verticalmente el contenido */
   height: 100vh;
   text-align: center;
   background-color: #000;
   color: #fff;
   position: relative;
-  overflow: hidden; /* Asegura que los elementos no se salgan del banner */
+  overflow: hidden;
 }
 
+/* GIF styles */
 .banner-gif {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  z-index: 1; /* Asegura que el GIF esté detrás del texto */
+  position: absolute; /* Permite que el contenido lo superponga */
+  z-index: 1;
 }
 
+/* Content container */
+.banner-content {
+  position: relative; /* Posición relativa para el contenido */
+  z-index: 2; /* Asegura que esté encima del GIF */
+  color: #fff;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Typing effect styles */
 .typing-effect-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2; /* Coloca el texto encima del GIF */
+  margin-bottom: 20px; /* Espacio entre el texto y el botón */
 }
 
 .typing-effect {
@@ -128,20 +134,14 @@ p {
                0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-.banner-content {
-  z-index: 3; /* Asegura que el contenido esté encima del GIF */
-  position: relative;
-}
-
-.banner-content p {
+/* Welcome text */
+.welcome-text {
   font-size: 20px;
-  max-width: 600px;
-  margin-top: 20px;
   font-weight: 300;
-  color: #fff;
+  margin-bottom: 20px;
 }
 
-
+/* Button styles */
 .banner-content .btn {
   display: inline-block;
   padding: 10px 20px;
