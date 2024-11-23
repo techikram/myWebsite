@@ -260,6 +260,7 @@ p {
   color: #8a2be2;
 }
 
+
 /* Projects Section */
 .projects {
   padding: 60px 20px;
@@ -284,11 +285,27 @@ p {
   background-color: #222;
   padding: 20px;
   border-radius: 8px;
-  width: 400px;
+  width: 400px; /* Ajusta según el diseño deseado */
   box-shadow: 0px 5px 15px rgba(138, 43, 226, 0.6), 
               0px 0px 20px rgba(0, 191, 255, 0.5);
+  text-align: center; /* Centra el contenido */
+  overflow: hidden; /* Evita que los elementos sobresalgan */
 }
 
+/* Carrusel */
+.carousel-inner {
+  border-radius: 8px; /* Mantiene las esquinas redondeadas */
+}
+
+.carousel-item img {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 300px; /* Limita la altura máxima de las imágenes */
+  object-fit: cover; /* Recorta suavemente las imágenes si son más grandes */
+  border-radius: 8px; /* Para que las imágenes sigan el diseño del contenedor */
+}
+
+/* Descripción y botón */
 .project-card h3 {
   font-size: 24px;
   margin-bottom: 15px;
@@ -299,19 +316,36 @@ p {
   margin-bottom: 20px;
 }
 
-.carousel img {
-  border-radius: 8px;
-}
-
 .btn-primary {
   background-color: #1e90ff; /* Azul claro */
   border: none;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-primary:hover {
   background-color: #1380d8; /* Azul más oscuro */
+  transform: scale(1.05); /* Pequeño efecto de zoom */
 }
+
+/* General Responsive Styles */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Tarjetas ocupan todo el ancho en pantallas pequeñas */
+  }
+
+  .projects-title {
+    font-size: 28px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
 
 /* Contact Section */
 .contact {
