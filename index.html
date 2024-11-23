@@ -20,6 +20,7 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
+  
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -29,7 +30,7 @@
     </nav>
   </header>
 
-  <!-- Banner -->
+  <!-- Banner Section -->
   <section id="home" class="banner">
     <div class="banner-image">
       <img src="headerBanner.gif" alt="Header Background" class="banner-gif">
@@ -54,6 +55,7 @@
     <div class="text-container">
       <h2 class="projects-title">My <span class="highlight">Projects</span></h2>
       <p>Here are some of the exciting projects I've worked on!</p>
+      <!-- Add your projects here -->
     </div>
   </section>
 
@@ -63,16 +65,17 @@
     <p>If you'd like to connect, feel free to reach out through my social media or send me an email!</p>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer class="footer" role="contentinfo">
     <p>© 2024 TechIkram | <a href="https://github.com/techikram">GitHub</a> | <a href="https://linkedin.com/in/techikram">LinkedIn</a></p>
   </footer>
 
+  <!-- JavaScript for the Mobile Menu Toggle -->
   <script>
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
 
-    // Toggle para el menú responsive
+    // Toggle for responsive menu
     mobileMenu.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
