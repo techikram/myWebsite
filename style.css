@@ -43,6 +43,16 @@ p {
   display: flex;
   align-items: center;
 }
+.typing-effect.cursor::after {
+  content: '|';
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 .logo {
   width: 50px;
