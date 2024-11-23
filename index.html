@@ -15,13 +15,11 @@
       <h1 class="site-title">TechIkram</h1>
     </div>
     <nav class="navbar">
-     
       <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-  
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -31,7 +29,7 @@
     </nav>
   </header>
 
-
+  <!-- Banner -->
   <section id="home" class="banner">
     <div class="banner-image">
       <img src="headerBanner.gif" alt="Header Background" class="banner-gif">
@@ -43,7 +41,7 @@
     </div>
   </section>
 
-
+  <!-- About Section -->
   <section id="about" class="about">
     <div class="text-container">
       <h2 class="about-title">About <span class="highlight">Me</span></h2>
@@ -51,32 +49,30 @@
     </div>
   </section>
 
-
+  <!-- Projects Section -->
   <section id="projects" class="projects">
     <div class="text-container">
       <h2 class="projects-title">My <span class="highlight">Projects</span></h2>
       <p>Here are some of the exciting projects I've worked on!</p>
-     
     </div>
   </section>
 
-
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2 class="contact-title">Get in <span class="highlight">Touch</span></h2>
     <p>If you'd like to connect, feel free to reach out through my social media or send me an email!</p>
   </section>
 
-
+  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <p>© 2024 TechIkram | <a href="https://github.com/techikram">GitHub</a> | <a href="https://linkedin.com/in/techikram">LinkedIn</a></p>
   </footer>
-
 
   <script>
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
 
-    // Toggle para el menú responsive
+    
     mobileMenu.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
