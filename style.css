@@ -88,12 +88,13 @@ p {
 .nav-links li:last-child {
   margin-left: auto;
 }
+
 /* Banner container styles */
 .banner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra el contenido verticalmente */
   height: 100vh;
   text-align: center;
   background-color: #000;
@@ -107,22 +108,25 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute; /* Permite que el contenido lo superponga */
-  z-index: 1;
+  position: absolute;
+  top: 40%; /* Ajusta la posición vertical hacia arriba */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Corrige el desplazamiento para un centrado perfecto */
+  z-index: 1; /* Mantén el GIF detrás del contenido */
 }
 
 /* Content container */
 .banner-content {
-  position: relative; /* Posición relativa para el contenido */
-  z-index: 2; /* Asegura que esté encima del GIF */
+  position: relative; /* El contenido principal encima del GIF */
+  z-index: 2;
   color: #fff;
   max-width: 800px;
   padding: 20px;
 }
 
-/* Typing effect styles */
+/* Typing effect container */
 .typing-effect-container {
-  margin-bottom: 20px; /* Espacio entre el texto y el botón */
+  margin-bottom: 20px; /* Espaciado entre el texto y el botón */
 }
 
 .typing-effect {
