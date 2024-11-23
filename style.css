@@ -11,73 +11,11 @@ h1, h2 {
   font-weight: bold;
   color: #8A2BE2;
 }
-/* Banner Section */
-.banner {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; 
-  overflow: hidden;
-}
-
-.banner-image .banner-gif {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh; 
-  object-fit: cover; 
-  z-index: -1;
-}
-
-.banner-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centra horizontal y verticalmente */
-  z-index: 1; /* Asegura que esté encima del GIF */
-  color: white;
-  text-align: center; /* Centra el texto */
-  max-width: 800px; /* Ajusta el ancho del contenido */
-}
-
-.typing-effect {
-  font-size: 2.5rem;
-  color: #8A2BE2;
-  border-right: 3px solid #8A2BE2;
-  padding-right: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 3s steps(20, end) infinite, blink 0.7s step-end infinite alternate;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  from { border-color: transparent; }
-  to { border-color: #8A2BE2; }
-}
-
-.btn-primary {
-  padding: 10px 15px;
-  background-color: #8A2BE2;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-  background-color: #6A1DBF;
-}
 
 /* Header */
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,6 +23,7 @@ h1, h2 {
   height: 70px;
   background: linear-gradient(90deg, #0A0A1E, #000000);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+  z-index: 10;
 }
 
 .logo-container {
@@ -115,20 +54,6 @@ h1, h2 {
   list-style: none;
 }
 
-.nav-links.active {
-  display: block;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  background: linear-gradient(90deg, #0A0A1E, #000000);
-  width: 100%;
-  text-align: center;
-}
-
-.nav-links li {
-  margin: 10px 0;
-}
-
 .navbar a {
   text-decoration: none;
   color: #ffffff;
@@ -138,24 +63,99 @@ h1, h2 {
 }
 
 .navbar a:hover {
-  color: #c4e4eb;
+  color: #5A9BFF;
 }
 
 .contact-btn {
   padding: 8px 15px;
-  background-color: #8A2BE2;
+  background-color: #5A9BFF;
   border-radius: 5px;
   color: #ffffff;
   font-size: 0.9rem;
   font-weight: bold;
   text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .contact-btn:hover {
-  background-color: #6A1DBF;
+  background-color: #8A2BE2;
 }
 
-/* Mobile Menu */
+/* Banner Section */
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-image .banner-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+  color: white;
+}
+
+.typing-effect {
+  font-size: 3rem;
+  color: #5A9BFF;
+  text-shadow: 0 0 15px #8A2BE2, 0 0 20px #5A9BFF;
+  border-right: 3px solid #8A2BE2;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(20, end) infinite, blink 0.7s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #8A2BE2;
+  }
+}
+
+.btn-primary {
+  padding: 10px 15px;
+  background-color: #5A9BFF;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #8A2BE2;
+}
+
+/* Responsive Menu */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -177,5 +177,21 @@ h1, h2 {
   .nav-links {
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: linear-gradient(90deg, #0A0A1E, #000000);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 9;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
   }
 }
