@@ -100,45 +100,47 @@ p {
   background-color: #000;
   color: #fff;
   position: relative;
+  overflow: hidden; /* Asegura que los elementos no se salgan del banner */
 }
 
 .banner-gif {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  z-index: 1; /* Asegura que el GIF esté detrás del texto */
 }
 
-.typing-effect {
-  font-size: 50px;
-  color: #b0e0e6; 
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-shadow: 0px 4px 10px rgba(0, 191, 255, 0.8), 
-               0px 4px 15px rgba(138, 43, 226, 0.5), 
-               0px 0px 10px rgba(255, 255, 255, 0.3);
-  animation: typing 4s steps(30) 1, blink 0.6s step-end infinite;
+.typing-effect-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2; /* Coloca el texto encima del GIF */
 }
 
-@keyframes typing {
-  0% { width: 0; }
-  100% { width: 100%; }
+.typing-effect {
+  font-size: 50px;
+  color: #b0e0e6;
+  font-weight: bold;
+  text-shadow: 0px 4px 10px rgba(0, 191, 255, 0.8), 
+               0px 4px 15px rgba(138, 43, 226, 0.5), 
+               0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-@keyframes blink {
-  50% { border-color: transparent; }
+.banner-content {
+  z-index: 3; /* Asegura que el contenido esté encima del GIF */
+  position: relative;
 }
 
-/* Banner content styles */
 .banner-content p {
   font-size: 20px;
   max-width: 600px;
   margin-top: 20px;
   font-weight: 300;
+  color: #fff;
 }
+
 
 .banner-content .btn {
   display: inline-block;
