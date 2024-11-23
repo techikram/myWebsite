@@ -265,11 +265,14 @@ p {
 }
 
 .profile-img {
-  max-width: 80%; /* Limita el tamaño máximo de la imagen */
-  border-radius: 15px; /* Esquinas redondeadas */
-  box-shadow: 0px 5px 15px rgba(0, 191, 255, 0.5), /* Sombra azul */
-              0px 0px 20px rgba(138, 43, 226, 0.4); /* Sombra morada */
+  max-width: 300px; 
+  width: 100%; 
+  height: auto; 
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 191, 255, 0.5),
+              0px 0px 20px rgba(138, 43, 226, 0.4); 
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
