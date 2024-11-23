@@ -5,25 +5,11 @@ body {
   padding: 0;
   background-color: #1E1E2F;
   color: white;
-  line-height: 1.6;
 }
 
-h1, h2, h3 {
-  color: #8A2BE2; 
+h1, h2 {
   font-weight: bold;
-}
-
-.highlight {
   color: #8A2BE2;
-}
-
-.highlight-dark {
-  color: #1E1E2F; /* Palabras destacadas en fondo claro */
-}
-
-.big-title {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
 }
 
 /* Header */
@@ -32,9 +18,13 @@ h1, h2, h3 {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #1E1E2F;
+  background-color: #0B0D2B;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  position: relative; /* Necesario para posicionar la capa */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -43,106 +33,124 @@ h1, h2, h3 {
 }
 
 .site-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #8A2BE2;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  background-color: #8A2BE2;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background-color: #6A1DBF;
 }
 
 /* Banner Section */
 .banner {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centrar contenido vertical y horizontal */
-  padding: 40px;
-  background-color: transparent; /* Transparente para que el GIF se vea */
-  position: relative;
-  overflow: hidden; /* Para que el contenido no se desborde */
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
 }
 
-.banner-image {
+.banner-image .banner-gif {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Esto asegura que el gif cubra toda la zona */
-  z-index: -1; /* Colocamos el gif detrás del contenido */
-}
-
-.banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(30, 30, 47, 0.6); /* Color oscuro semitransparente */
-  z-index: 0; /* Ponemos la capa encima del gif */
+  object-fit: cover;
+  z-index: -1;
 }
 
 .banner-content {
-  z-index: 1; /* Hacemos que el texto esté sobre la capa */
-  text-align: center;
+  z-index: 1;
   color: white;
 }
 
-/* Typing effect text */
 .typing-effect {
-  display: inline-block;
   font-size: 2.5rem;
   color: #8A2BE2;
   border-right: 3px solid #8A2BE2;
   padding-right: 5px;
   white-space: nowrap;
   overflow: hidden;
+  animation: typing 3s steps(20, end) infinite, blink 0.7s step-end infinite alternate;
 }
 
-.typing-effect span {
-  display: inline-block;
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-.typing-effect {
-  margin-bottom: 20px;
-}
-
-/* Button */
-.btn {
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: #8A2BE2; }
 }
 
 .btn-primary {
-  background-color: #66779B;
+  padding: 10px 15px;
+  background-color: #8A2BE2;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.btn-secondary {
-  background-color: #1E1E2F;
+.btn-primary:hover {
+  background-color: #6A1DBF;
 }
 
-/* Other Sections */
-.about, .projects {
+/* About Section */
+.about {
   padding: 40px;
-  background-color: #66779B; 
+  background-color: #66779B;
+  text-align: center;
 }
 
-.projects-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
+.highlight {
+  color: #8A2BE2;
+}
+
+.highlight-dark {
+  color: #ffffff;
 }
 
 /* Footer */
 .footer {
   padding: 20px;
-  background-color: #8A2BE2;
-  color: white;
+  background-color: #0B0D2B;
+  color: #ffffff;
   text-align: center;
 }
 
 .footer a {
-  color: white;
+  color: #8A2BE2;
   text-decoration: none;
 }
 
