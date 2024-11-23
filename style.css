@@ -246,8 +246,10 @@ p {
               0px 0px 12px rgba(255, 255, 255, 0.5); /* Blanco más brillante */
 }
 
-/* Centrado general */
+/* Fondo de la sección About */
 .about {
+  background-color: #111; /* Fondo oscuro */
+  color: #fff; /* Color de texto blanco */
   display: flex;
   justify-content: center; /* Centra el contenido en el eje horizontal */
   align-items: center;     /* Centra el contenido en el eje vertical */
@@ -256,6 +258,7 @@ p {
   text-align: center;      /* Alinea el texto al centro */
 }
 
+/* Contenedor principal */
 .about-container {
   display: flex;
   justify-content: center;
@@ -266,30 +269,42 @@ p {
   margin: 0 auto; /* Centra el contenedor en la página */
 }
 
+/* Contenedor de texto */
 .text-container {
-  flex: 1 1 45%; /* Toma el 45% del ancho y se adapta en pantallas pequeñas */
-  max-width: 500px; /* Limita el ancho máximo del texto */
+  flex: 1 1 45%; 
+  max-width: 500px; 
 }
 
+/* Contenedor de la imagen */
 .image-container {
-  flex: 1 1 45%; /* Toma el 45% del ancho y se adapta en pantallas pequeñas */
+  flex: 1 1 45%; 
 }
 
+/* Imagen de perfil */
 .profile-img {
-  max-width: 100%;
+  max-width: 250px; 
   height: auto;
-  border-radius: 50%; /* Hace que la imagen sea redonda */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Añade una sombra para darle profundidad */
+  border-radius: 50%; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo para el título y resaltado */
 .about-title {
   font-size: 2rem;
   font-weight: 700;
+  color: #1e90ff; /* Azul claro */
+  text-shadow: 2px 2px 10px rgba(128, 0, 128, 0.7), 0px 0px 15px rgba(0, 0, 255, 0.5); /* Sombra morada y azul */
 }
 
 .highlight {
   color: #ff6347; /* Un color cálido para resaltar */
+}
+
+
+.text-container p {
+  font-size: 1rem;
+  color: #ccc; /* Texto en gris claro para mayor contraste */
+  line-height: 1.6;
 }
 
 /* Estilo para los botones */
@@ -323,6 +338,7 @@ p {
   font-size: 1.2rem;
 }
 
+/* Modal */
 .modal {
   display: none;
   position: fixed;
