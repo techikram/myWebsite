@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 
-/* Body y Font */
+/* Body */
 body {
   font-family: Arial, sans-serif;
   background-color: #000;
   color: #fff;
 }
 
-/* Header Section */
+/* Header */
 header {
   position: fixed;
   top: 0;
@@ -90,7 +90,6 @@ header nav a:hover {
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
   z-index: 2;
 }
 
