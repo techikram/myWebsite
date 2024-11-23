@@ -11,6 +11,70 @@ h1, h2 {
   font-weight: bold;
   color: #8A2BE2;
 }
+/* Banner Section */
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.banner-image .banner-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+  object-fit: cover; 
+  z-index: -1;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra horizontal y verticalmente */
+  z-index: 1; /* Asegura que esté encima del GIF */
+  color: white;
+  text-align: center; /* Centra el texto */
+  max-width: 800px; /* Ajusta el ancho del contenido */
+}
+
+.typing-effect {
+  font-size: 2.5rem;
+  color: #8A2BE2;
+  border-right: 3px solid #8A2BE2;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(20, end) infinite, blink 0.7s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: #8A2BE2; }
+}
+
+.btn-primary {
+  padding: 10px 15px;
+  background-color: #8A2BE2;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #6A1DBF;
+}
 
 /* Header */
 .header {
