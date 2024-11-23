@@ -152,6 +152,15 @@ p {
   transition: transform 0.3s, background-color 0.3s;
 }
 
+.banner-content .btn:hover {
+  transform: scale(1.1);
+  background-color: rgba(30, 144, 255, 0.8); /* Azul claro al pasar el mouse */
+  box-shadow: 0px 6px 15px rgba(30, 144, 255, 0.8), /* Azul más intenso */
+              0px 6px 20px rgba(138, 43, 226, 0.7), /* Morado oscuro más fuerte */
+              0px 0px 12px rgba(255, 255, 255, 0.5); /* Blanco más brillante */
+}
+
+
 
 
 /* About Section */
