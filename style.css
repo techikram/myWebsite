@@ -13,20 +13,15 @@ h1, h2 {
 }
 
 
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   height: 70px; 
-  background: linear-gradient(90deg, #0B0D2B, #11132F); 
+  background: linear-gradient(90deg, #0A0A1E, #000000);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
-  transition: background-color 0.3s, opacity 0.3s;
-}
-
-.header:hover {
-  background: linear-gradient(90deg, #0D1C4A, #000000); 
-  opacity: 0.95;
 }
 
 .logo-container {
@@ -40,8 +35,9 @@ h1, h2 {
 }
 
 .site-title {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   color: #ffffff;
+  font-weight: 600; 
 }
 
 .navbar {
@@ -53,20 +49,20 @@ h1, h2 {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
   transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #8A2BE2;
+  color: #c4e4eb;
 }
 
 .contact-btn {
   padding: 8px 15px;
-  background-color: #8A2BE2;
+  background-color: #c4e4eb;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
   font-weight: bold;
   text-decoration: none;
 }
@@ -74,6 +70,7 @@ h1, h2 {
 .contact-btn:hover {
   background-color: #6A1DBF;
 }
+
 
 /* Banner Section */
 .banner {
