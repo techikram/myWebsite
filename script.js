@@ -11,8 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(typeText, 150); 
     }
   }
-
+ 
   typeText();
+
+  setInterval(() => {
+    typingEffectElement.classList.toggle('cursor');
+  }, 500);
 });
 
 
