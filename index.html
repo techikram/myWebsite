@@ -14,14 +14,21 @@
       <h1 class="site-title">TechIkram</h1>
     </div>
     <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact" class="btn contact-btn">Contact</a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn contact-btn">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Banner con GIF -->
+ 
   <section id="home" class="banner">
     <div class="banner-image">
       <img src="headerBanner.gif" alt="Header Background" class="banner-gif">
@@ -46,6 +53,14 @@
     <p>© 2024 TechIkram | <a href="https://github.com/techikram">GitHub</a> | <a href="https://linkedin.com/in/techikram">LinkedIn</a></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+  
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
