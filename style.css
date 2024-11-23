@@ -46,7 +46,7 @@ p {
 .logo {
   width: 50px;
   margin-right: 10px;
-  box-shadow: 0px 0px 10px rgba(138, 43, 226, 0.8), 0px 0px 20px rgba(30, 144, 255, 0.6); /* Solo sombra */
+  box-shadow: 0px 0px 10px rgba(138, 43, 226, 0.8), 0px 0px 20px rgba(30, 144, 255, 0.6);
 }
 
 .site-title {
@@ -93,7 +93,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh; /* Ajustado para dar más espacio al texto */
+  height: 100vh;
   text-align: center;
   background-color: #000;
   color: #fff;
@@ -104,13 +104,11 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 0;
 }
 
 .typing-effect {
   font-size: 50px;
-  color: #b0e0e6;
+  color: #b0e0e6; 
   font-weight: bold;
   margin-bottom: 20px;
   text-shadow: 0px 4px 10px rgba(0, 191, 255, 0.8), 
@@ -118,7 +116,7 @@ p {
                0px 0px 10px rgba(255, 255, 255, 0.3);
   animation: typing 4s steps(30) 1, blink 0.6s step-end infinite;
   position: absolute;
-  top: 40%; /* Ajustado para estar más arriba */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -237,7 +235,7 @@ p {
   display: inline-block;
   padding: 10px 20px;
   margin: 10px;
-  background-color: #003366; /* Azul oscuro */
+  background-color: #00bfff;
   color: #fff;
   border-radius: 5px;
   text-shadow: 0px 4px 10px rgba(138, 43, 226, 0.8), 
