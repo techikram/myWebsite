@@ -25,8 +25,6 @@ p {
   margin: 10px 0;
 }
 
-/* Header */
-/* Header base styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -251,11 +249,11 @@ p {
   background-color: #111; /* Fondo oscuro */
   color: #fff; /* Color de texto blanco */
   display: flex;
-  justify-content: center; /* Centra el contenido en el eje horizontal */
-  align-items: center;     /* Centra el contenido en el eje vertical */
-  flex-direction: column;  /* Coloca los elementos en una columna */
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column;  
   padding: 50px 20px;
-  text-align: center;      /* Alinea el texto al centro */
+  text-align: center;      
 }
 
 /* Contenedor principal */
@@ -293,7 +291,6 @@ p {
   font-size: 2rem;
   font-weight: 700;
   color: #fff; 
-  text-shadow: 2px 2px 10px rgba(128, 0, 128, 0.7), 0px 0px 15px rgba(0, 0, 255, 0.5); /* Sombra morada y azul */
 }
 
 .highlight {
