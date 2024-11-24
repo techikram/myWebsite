@@ -292,12 +292,13 @@ p {
 .about-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #1e90ff; /* Azul claro */
+  color: #d0f2f8; /* Azul claro */
   text-shadow: 2px 2px 10px rgba(128, 0, 128, 0.7), 0px 0px 15px rgba(0, 0, 255, 0.5); /* Sombra morada y azul */
 }
 
 .highlight {
-  color: #ff6347; /* Un color cálido para resaltar */
+  color: #d0f2f8; 
+  text-shadow: 2px 2px 10px rgba(128, 0, 128, 0.7), 0px 0px 15px rgba(0, 0, 255, 0.5);
 }
 
 
